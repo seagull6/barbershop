@@ -1,0 +1,76 @@
+..icon-login, .f-copy, .f, .v-copy, .v, .📷-copy, .📷, .User-copy 2, .Locked-2, .Cross-(16x16) copy, .cross, .Diamond-marker{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon-login {
+	background-position: -15px -15px ;
+	width: 18px;
+	height: 16px;
+}
+
+.f-copy{
+	background-position: -68px -15px ;
+	width: 12px;
+	height: 22px;
+}
+
+.f{
+	background-position: -68px -62px ;
+	width: 12px;
+	height: 22px;
+}
+
+.v-copy{
+	background-position: -111px -19px ;
+	width: 25px;
+	height: 16px;
+}
+
+.v{
+	background-position: -111px -68px ;
+	width: 25px;
+	height: 16px;
+}
+
+.📷-copy {
+	background-position: -165px -15px ;
+	width: 21px;
+	height: 21px;
+}
+
+.📷{
+	background-position: -165px -63px ;
+	width: 21px;
+	height: 21px;
+}
+
+.User-copy 2 {
+	background-position: -18px -69px ;
+	width: 15px;
+	height: 15px;
+}
+
+.Locked-2 {
+	background-position: -19px -116px ;
+	width: 15px;
+	height: 17px;
+}
+
+.Cross-(16x16) copy{
+	background-position: -62px -115px ;
+	width: 23px;
+	height: 23px;
+}
+
+.cross{
+	background-position: -123px -121px ;
+	width: 12px;
+	height: 12px;
+}
+
+.Diamond-marker{
+	background-position: -169px -116px ;
+	width: 11px;
+	height: 12px;
+}
+

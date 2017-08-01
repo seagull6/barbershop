@@ -3,15 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -19,10 +19,10 @@
 						<a href="#">Новости</a>
 					</li>
 					<li>
-						<a href="#">Прайс-лист</a>
+						<a href="price.html">Прайс-лист</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a href="shop.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -30,15 +30,15 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="login" href="#">Выход</a>
-			</div>
+				<a class="login" href="/login">Вход</a>
+			</div> 
 		</div>
 	</header>
 	<main class="container">
 		<div class="index-logo">
-			<img src="img/index-logo.png" width="204" height="102" alt="Barbershop Borodinski">
+			<img src="img/index-logo.png" width="368" height="204" alt="Barbershop Borodinski">
 		</div>
-		<section class="features">
+		<section class="features clearfix">
 			<div class="features-item">
 				<b class="features-name">Быстро</b>
 				<p>Мы делаем свою работу работу! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -52,7 +52,7 @@
 				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
 			</div>
 		</section>
-		<div class="index-content">
+		<div class="index-content clearfix">
 			<div class="index-content-left">
 				<h2 class="index-content-title">Новости</h2>
 				<ul class="news-preview">
@@ -62,7 +62,7 @@
 					</li>
 					<li>
 						<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши строгие ряды</p>
-						<time datetime="2017-09-19">19 сентября></time>
+						<time datetime="2017-09-19">19 сентября</time>
 					</li>
 				</ul>
 				<a class="btn" href="#">Все новости</a>
@@ -71,49 +71,50 @@
 				<h2 class="index-content-title">Фотогалерея</h2>
 				<div class="gallery">
 					<figure class="gallery-content">
-						<img src="img/photo-1.jpg" width="286" height="164" alt="">
+						<a href="#"><img src="img/photogallery.jpg" width="286" height="164" alt=""></a>
 					</figure>
-					<button class="btn gallery-prev">Назад</button>
-					<button class="btn gallery-next">Вперед</button>
+					<button class="btn gallery-prev" type="button" disabled>Назад</button>
+					<button class="btn gallery-next" type="button">Вперед</button>
 				</div>
 			</div>
+		</div>
+		<div class="index-content clearfix">
+			<div class="index-content-left">
+				<h2 class="index-content-title">Контактная информация</h2>
+				<p>
+					Барбершоп «Бородинский»<br>
+					Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
+					Телефон: +3 (067) 734-43-09
+				</p> 
+				<p>
+					Время работы:<br>
+					Пн-Пт: с 10:00 до 22:00<br>
+					Сб-Вс: с 10:00 до 19:00
+				</p>
+				<a class="btn js-open-map" href="#">Как проехать</a>
+				<a class="btn" href="#">Обратная связь</a>
 			</div>
-			<div class="index-content">
-				<div class="inex-content-left">
-					<h2 class="index-content-title">Контактная информация</h2>
-					<p>
-						Барбершоп «Бородинский»<br>
-						Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
-						Телефон: +3 (067) 734-43-09
-					</p> 
-					<p>
-						Время работы:<br>
-						Пн-Пт: с 10:00 до 22:00<br>
-						Сб-Вс: с 10:00 до 19:00
-					</p>
-					<a class="btn" href="#">Как проехать</a>
-					<a class="btn" href="#">Обратная связь</a>
-				</div>
-				<div class="index-content-right">
-					<h2 class="index-content-title">Записаться</h2>
-					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверджения брони</p>
-					<form class="apointment-form" action="https://echo.seagull6.com" method="post">
-						<input type="text" name="date" value="" placeholder="Дата">
-						<input type="text" name="time" value="" placeholder="Время">
-						<input type="text" name="name" value="" placeholder="Ваше имя">
-						<input type="tel" name="phone" value="" placeholder="Телефон">
-						<button class="btn" type="submit">Оправить</button>
-					</form>
-				</div>
+			<div class="index-content-right">
+				<h2 class="index-content-title">Записаться</h2>
+				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверджения брони</p>
+				<form class="appointment-form" action="https://echo.seagull6.com" method="post">
+					<input type="text" name="date" value="" placeholder="Дата">
+					<input type="text" name="time" value="" placeholder="Время">
+					<input type="text" name="name" value="" placeholder="Ваше имя">
+					<input type="tel" name="phone" value="" placeholder="Телефон">
+					<button class="btn" type="submit">Оправить</button>
+				</form>
 			</div>
-		</main>
-		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-contacts">
-					<p>Барбершоп «Бородинский»<br>
-						Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
-						<a href="#">Как нас найти?</a>
-						Телефон: +3 (067) 734-43-09</p>
+		</div>
+	</main>
+	<footer class="main-footer clearfix">
+		<div class="container">
+			<div class="footer-contacts">
+				<p>Барбершоп «Бородинский»<br>
+					Адрес: г. Киев, ул. Гайдраа, 2 д.4/5<br>
+					<a href="#" class="js-open-map-footer">Как нас найти?</a><br>
+					Телефон: +3 (067) 734-43-09</p>
+				</div>
 				<div class="footer-social">
 					<p>Давайте дружить!</p>
 					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -125,7 +126,28 @@
 					<a class="btn" href="https://seagull6.com">seagull6.com</a>
 				</div>
 			</div>
-			</div>
 		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Введите свой логин и пароль</p>
+			<form class="login-form" action="#" method="post">
+				<input class="icon-user" type="text" name="login" placeholder="Логин">
+				<input class="icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомните меня 
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+				<button class="btn" type="submit">Войти</button>
+			</form>
+		</div>
+		<div class="modal-content-map">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1032213318535!2d30.495070315731184!3d50.439177979473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1eec696e3%3A0x38a418f5507aa73e!2z0LLRg9C70LjRhtGPINCT0LDQudC00LDRgNCwLCA1LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1500497682839" width="766" height="561" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="modal-overlay"></div>
+		<script src="js/scripts.js"></script>
 	</body>
 	</html>

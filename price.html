@@ -3,26 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
+				<a class="logo-inner" href="index.html"><img src="img/Logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
 				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
 					<li>
 						<a href="#">Информация</a>
 					</li>
 					<li>
 						<a href="#">Новости</a>
 					</li>
-					<li>
-						<a href="#">Прайс-лист</a>
+					<li class="active">
+						<span>Прайс-лист</span>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a href="shop.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -34,66 +35,67 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
-		<div class="page-title">
-			<h2>Прайс-лист</h2>
-		</div>
-		<div class="breadcrumbs">
-			<ul>
+	<main class="container clearfix">
+		<div class="inner-page-title">
+			<h1>Прайс-лист</h1>
+			<ul class="breadcrumbs">
 				<li>
 					<a href="index.html">Главная</a>
 				</li>
-				<li>
-					<span class="current">Прайс-лист</span>
-				</li>
+				<li class="current">Прайс-лист</li>
 			</ul>
 		</div>
-		<div class="content-title">
-			<h1>Истинно мужская классика</h1>
-		</div>
-		<div class="price-columns clearfix">
-			<div class="price-content-left">
-				<h3>Мы используем только лучшие средства:</h3>
-				<ul>
-					<li>Baxter of California</li>
-					<li>Mr Natty</li>
-					<li>Suavecito</li>
-					<li>Malin+Goetz</li>
-				</ul>
+		<div class="inner-content">
+			<div class="big-heading">
+				<h2>Истинно мужская классика</h2>
 			</div>
-			<div class="price-content-right">
-				<h3>Цена на услуги наших мастеров:</h3>
-				<table>
-					<tr>
-						<td>Стрижка</td>
-						<td>400 грн.</td>
-					</tr>
-					<tr>
-						<td>Стрижка бороды</td>
-						<td>250 грн.</td>
-					</tr>
-					<tr>
-						<td>Укладка</td>
-						<td>100 грн.</td>
-					</tr>
-				</table>
+			<div class="inner-columns clearfix">
+				<div class="inner-column-left">
+					<h2>Мы используем только<br> лучшие средства:</h2>
+					<ul class="custom-list-1">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goetz</li>
+					</ul>
+				</div>
+				<div class="inner-column-right">
+					<h2>Цена на услуги<br>наших мастеров:</h2>
+					<table class="prices-table">
+						<tr>
+							<td>Стрижка</td>
+							<td>400 грн.</td>
+						</tr>
+						<tr>
+							<td>Стрижка бороды</td>
+							<td>250 грн.</td>
+						</tr>
+						<tr>
+							<td>Укладка</td>
+							<td>100 грн.</td>
+						</tr>
+					</table>
+				</div>
 			</div>
-			<div class="price-content-left">
-				<h3>Несколько слов о нас</h3>
-				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			<div class="inner-columns clearfix">
+				<h2>Несколько слов о нас</h2>
+				<div class="inner-column-left ">
+					<p class="short-text">Наша парикмахерская занимается исключительно 	мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+				</div>
+				<div class="inner-column-right">
+					<p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+				</div>
 			</div>
-			<div class="price-content-right">
-				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-			</div>
-		</div>
+		</div>	
 	</main>
-		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-contacts">
-					<p>Барбершоп «Бородинский»<br>
-						Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
-						<a href="#">Как нас найти?</a>
-						Телефон: +3 (067) 734-43-09</p>
+	<footer class="main-footer clearfix">
+		<div class="container">
+			<div class="footer-contacts">
+				<p>Барбершоп «Бородинский»<br>
+					Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
+					<a href="#" class="js-open-map-footer">Как нас найти?</a><br>
+					Телефон: +3 (067) 734-43-09</p>
+				</div>
 				<div class="footer-social">
 					<p>Давайте дружить!</p>
 					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -105,7 +107,28 @@
 					<a class="btn" href="https://seagull6.com">seagull6.com</a>
 				</div>
 			</div>
-			</div>
 		</footer>
-</body>
-</html>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Введите свой логин и пароль</p>
+			<form class="login-form" action="#" method="post">
+				<input class="icon-user" type="text" name="login" placeholder="Логин">
+				<input class="icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомните меня 
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+				<button class="btn" type="submit">Войти</button>
+			</form>
+		</div>
+		<div class="modal-content-map">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1032213318535!2d30.495070315731184!3d50.439177979473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1eec696e3%3A0x38a418f5507aa73e!2z0LLRg9C70LjRhtGPINCT0LDQudC00LDRgNCwLCA1LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1500497682839" width="766" height="561" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="modal-overlay"></div>
+		<script src="js/scripts.js"></script>
+	</body>
+	</html>

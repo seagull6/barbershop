@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий «Baxter of California»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<div class="container">
-			<div class="logo-header">
-				<a href="index.html"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
-			</div>
+		<div class="container clearfix">
 			<nav class="main-navigation">
+			<a class="logo-inner" href="index.html"><img src="img/Logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
 				<ul>
-					<li>
-						<a href="#">Главная</a>
-					</li>
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -22,10 +20,10 @@
 						<a href="#">Новости</a>
 					</li>
 					<li>
-						<a href="#">Прайс-лист</a>
+						<a href="price.html">Прайс-лист</a>
 					</li>
-					<li>
-						<a href="#">Магазин</a>
+					<li class="active">
+						<span>Магазин</span>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -37,71 +35,91 @@
 			</div>
 		</div>
 	</header>
-	<main class="container">
-		<div class="page-title">
-			<h2>Набор для путешествий «Baxter of California»</h2>
-		</div>
-		<div class="breadcrumbs">
-			<ul>
+	<main class="container clearfix">
+		<div class="inner-page-title"> 
+			<h1>Набор для путешествий «Baxter of California»</h1>
+			<ul class="breadcrumbs">
 				<li>
 					<a href="index.html">Главная</a>
 				</li>
 				<li>
-					<a href="#">Магазин</a>
+					<a href="shop.html">Магазин</a>
 				</li>
 				<li>
-					<a href="#">Средства для ухода</a>
+					<a href="shop.html">Средства для ухода</a>
 				</li>
-				<li>
-					<span class="current">Набор для путешествий «Baxter of California»</span>
-				</li>
+				<li class="current">Набор для путешествий «Baxter of California»</li>
 			</ul>
 		</div>
-		<section class="item-gallery">
-			<img src="img/barbershop-item/item-main-photo.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
-			<img src="img/barbershop-item/item-photo1.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">
-			<img src="img/barbershop-item/item-photo2.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">
-			<img src="img/barbershop-item/item-photo3.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">  
-		</section>
-		<section class="product-info">
-			<span class="product-available">Есть в наличии</span>
-			<p class="product-info-code">Артикул: Dexter-AE</p>
-			<p class="product-description">TRAVEL KIT - необходимый аксессуар во время любого путешествия, в аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажнющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-		</section>
-		<div class="product-price">
-			<span class="price-value">1800 грн.</span>
-			<a class="btn price-btn" href="#">Купить</a>
-		</div>
-		<section class="product-set">
-			<h3 class="item-content-title">В набор входят:</h3>
-			<ul>
-				<li>Средство для умывания (50 мл)</li>
-				<li>Увлажняющий крем (50 мл)</li>
-				<li>Крем для бритья (50 мл)</li>
-				<li>Крем после бритья, шампунь (50 мл)</li>
-				<li>Удобная кожаная косметичка (50 мл)</li>
-			</ul>
-		</section>
+		<div class="inner-content">
+			<section class="item-gallery">
+				<img src="img/item-gallery.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»">
+				<img src="img/item-gallery1.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">
+				<img src="img/item-gallery2.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">
+				<img src="img/item-gallery3.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»">  
+			</section>
+			<section class="product-info">
+				<span class="product-availible">Есть в наличии</span>
+				<span class="product-info-code">Артикул: Dexter-AE</span>
+				<p class="product-description">TRAVEL KIT - необходимый аксессуар во время любого путешествия, в аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажнющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+				<div class="product-price">
+					<span class="price-value">1800 грн.</span>
+					<a class="btn price-btn" href="#">Купить</a>
+				</div>
+			</section>
+			<section class="product-set">
+				<h2 class="item-content-title">В набор входят:</h2>
+				<ul class="custom-list-1">
+					<li>Средство для умывания (50 мл)</li>
+					<li>Увлажняющий крем (50 мл)</li>
+					<li>Крем для бритья (50 мл)</li>
+					<li>Крем после бритья, шампунь (50 мл)</li>
+					<li>Удобная кожаная косметичка (50 мл)</li>
+				</ul>
+			</section>
+		</div>	
 	</main>
-	<footer class="main-footer">
+	<footer class="main-footer clearfix">
 		<div class="container">
 			<div class="footer-contacts">
 				<p>Барбершоп «Бородинский»<br>
 					Адрес: г. Киев, ул. Гайдара, д. 24/5<br>
-					<a href="#">Как нас найти?</a>
+					<a href="#" class="js-open-map-footer">Как нас найти?</a><br>
 					Телефон: +3 (067) 734-43-09</p>
-					<div class="footer-social">
-						<p>Давайте дружить!</p>
-						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-						<a class="social-btn social-btn-fb" href="#">Facebook</a>
-						<a class="social-btn social-btn-inst" href="#">Instagram</a>
-					</div>
-					<div class="footer-copyright">
-						<p>Разработано:</p>
-						<a class="btn" href="https://seagull6.com">seagull6.com</a>
-					</div>
+				</div>
+				<div class="footer-social">
+					<p>Давайте дружить!</p>
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Facebook</a>
+					<a class="social-btn social-btn-inst" href="#">Instagram</a>
+				</div>
+				<div class="footer-copyright">
+					<p>Разработано:</p>
+					<a class="btn" href="https://seagull6.com">seagull6.com</a>
 				</div>
 			</div>
 		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<h2 class="modal-content-title">Личный кабинет</h2>
+			<p>Введите свой логин и пароль</p>
+			<form class="login-form" action="#" method="post">
+				<input class="icon-user" type="text" name="login" placeholder="Логин">
+				<input class="icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомните меня 
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+				<button class="btn" type="submit">Войти</button>
+			</form>
+		</div>
+		<div class="modal-content-map">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1032213318535!2d30.495070315731184!3d50.439177979473925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1eec696e3%3A0x38a418f5507aa73e!2z0LLRg9C70LjRhtGPINCT0LDQudC00LDRgNCwLCA1LCDQmtC40ZfQsg!5e0!3m2!1sru!2sua!4v1500497682839" width="766" height="561" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="modal-overlay"></div>
+		<script src="js/scripts.js"></script>
 	</body>
 	</html>
